@@ -1,0 +1,3 @@
+[submodule "UnityNodeEditor/Assets/ToolsModule"]
+	path = UnityNodeEditor/Assets/ToolsModule
+	url = https://github.com/Mefodei/UnityTools-Code.git
