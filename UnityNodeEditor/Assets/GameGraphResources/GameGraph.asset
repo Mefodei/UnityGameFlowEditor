@@ -11,4 +11,121 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9c58647683ec3f41912863d89ee4205, type: 3}
   m_Name: GameGraph
   m_EditorClassIdentifier: 
-  nodes: []
+  nodes:
+  - {fileID: 114947555552935320}
+  - {fileID: 114187842065286092}
+  - {fileID: 114966535649274070}
+--- !u!114 &114187842065286092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72411a75303d9c48806e00929ad11ca, type: 3}
+  m_Name: Game State Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -152, y: 8}
+  ports:
+    keys:
+    - InContext
+    - OutContext
+    values:
+    - _fieldName: InContext
+      _node: {fileID: 114187842065286092}
+      _typeQualifiedName: GameContext, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: OutContext
+        node: {fileID: 114947555552935320}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: OutContext
+      _node: {fileID: 114187842065286092}
+      _typeQualifiedName: GameContext, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: InContext
+        node: {fileID: 114966535649274070}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+--- !u!114 &114947555552935320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72411a75303d9c48806e00929ad11ca, type: 3}
+  m_Name: Game State Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -392, y: -136}
+  ports:
+    keys:
+    - InContext
+    - OutContext
+    values:
+    - _fieldName: InContext
+      _node: {fileID: 114947555552935320}
+      _typeQualifiedName: GameContext, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: OutContext
+      _node: {fileID: 114947555552935320}
+      _typeQualifiedName: GameContext, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: InContext
+        node: {fileID: 114187842065286092}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+--- !u!114 &114966535649274070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72411a75303d9c48806e00929ad11ca, type: 3}
+  m_Name: Game State Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 72, y: -136}
+  ports:
+    keys:
+    - InContext
+    - OutContext
+    values:
+    - _fieldName: InContext
+      _node: {fileID: 114966535649274070}
+      _typeQualifiedName: GameContext, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: OutContext
+        node: {fileID: 114187842065286092}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: OutContext
+      _node: {fileID: 114966535649274070}
+      _typeQualifiedName: GameContext, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0

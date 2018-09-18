@@ -9,7 +9,9 @@ namespace GameGraphModule
 	[Serializable]
 	public class GameStateNode : Node
 	{
-
+		
+		[Input] public GameContext InContext;
+		[Output] public GameContext OutContext;
 		
 		
 	}
